@@ -1,0 +1,19 @@
+Abordagem Page Objects / Page Factory
+
+- Pode ser usada com ou sem BDD
+- Foco na manutenção e reaproveitamento de código
+- Ideal para projetos com ciclo de vida longo (CVDS / SDLC)
+
+Estrutura típica:
+- Arquivo de mapeamento para cada página ou seção (*Page.java)
+- Arquivo comum para elementos compartilhados (ex: CommumPage.java)
+- Arquivo base para configurar o WebDriver (BaseTest.java)
+
+Se usado com BDD:
+- Arquivo de negócio (.feature)
+- Arquivo de automação (.java)
+- Arquivos de mapeamento (Page Objects)
+
+Arquivos adicionais por projeto:
+- Hooks.java → Métodos Before e After centralizados
+- Runner.java → Responsável por executar os testes (maestro)
