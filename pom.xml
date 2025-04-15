@@ -43,6 +43,14 @@
             <artifactId>webdrivermanager</artifactId>
             <version>6.0.1</version>
         </dependency>
+
+        <!-- JUnit Jupiter API: permite escrever e executar testes com JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.12.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>

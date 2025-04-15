@@ -42,4 +42,7 @@ public class HomePage extends CommonPage {
         btn_FindFlight.click(); // Aciona o clique no botão mapeado com @FindBy
     }
     
+    public String ler_Nome_Guia() { // Método para ler o título da página
+        return driver.getTitle(); // Retorna o título da página atual no navegador
+    }    
 }
