@@ -29,8 +29,8 @@ public class HomePage extends CommonPage {
     // ############################################################################################################
 
     // Ações com os elementos mapeados
-    public void acessarHomePage() { // Método para acessar a página inicial
-        driver.get("https://www.blazedemo.com/"); // Abre a URL no navegador
+    public void acessarHomePage(String url) { // Método para acessar a página inicial
+        driver.get(url); // Abre a URL no navegador
     }
 
     public void selecionar_Origem_Destino(String byOrigem, String byDestino) { // Método para selecionar a origem e o destino
