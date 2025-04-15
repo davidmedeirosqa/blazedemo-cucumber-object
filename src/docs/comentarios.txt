@@ -17,3 +17,8 @@ Se usado com BDD:
 Arquivos adicionais por projeto:
 - Hooks.java → Métodos Before e After centralizados
 - Runner.java → Responsável por executar os testes (maestro)
+
+###
+
+Código usado para identificar os snippets:
+mvn clean test -Dsurefire.includeJUnit5Engines=cucumber -Dcucumber.features="src/test/resources/features"

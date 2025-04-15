@@ -1,0 +1,5 @@
+ComprarPassagemPO.class
+pages\CommonPage.class
+pages\Base.class
+pages\ReservePage.class
+pages\HomePage.class
