@@ -1,6 +1,0 @@
-pages\CommonPage.class
-pages\ReservePage.class
-pages\HomePage.class
-ComprarPassagemPO.class
-pages\Base.class
-runner\CucumberTest.class

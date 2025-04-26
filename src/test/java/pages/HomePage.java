@@ -40,9 +40,5 @@ public class HomePage extends CommonPage {
 
     public void clicar_Btn_FindFlights() { // Método para clicar no botão "Find Flights"
         btn_FindFlight.click(); // Aciona o clique no botão mapeado com @FindBy
-    }
-    
-    public String ler_Nome_Guia() { // Método para ler o título da página
-        return driver.getTitle(); // Retorna o título da página atual no navegador
     }    
 }

@@ -12,4 +12,7 @@ public class CommonPage { // Classe base com elementos e métodos comuns às pá
     }
 
     // Métodos utilitários comuns às páginas serão definidos aqui
+    public String ler_Nome_Guia() { // Método para ler o título da página
+        return driver.getTitle(); // Retorna o título da página atual no navegador
+    }
 }
