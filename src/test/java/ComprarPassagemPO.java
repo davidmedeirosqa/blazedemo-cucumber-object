@@ -36,7 +36,7 @@ public class ComprarPassagemPO { // Classe de definição dos passos com Page Ob
         homePage.acessarHomePage(url); // Acessa a URL informada no navegador
 
         // Validar se a página está correta através do nome da guia "Blazedemo"
-        assertEquals("Blazedemo", homePage.ler_Nome_Guia());
+        assertEquals("BlazeDemo", homePage.ler_Nome_Guia());
     }
 
     @When("seleciono a {string} e {string}") // Passo para selecionar origem e destino

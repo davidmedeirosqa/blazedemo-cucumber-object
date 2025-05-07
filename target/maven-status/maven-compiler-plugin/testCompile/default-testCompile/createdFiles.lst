@@ -1,0 +1,7 @@
+pages\CommonPage.class
+pages\ReservePage.class
+pages\HomePage.class
+ComprarPassagemPO.class
+pages\Base.class
+Runner.class
+Hooks.class

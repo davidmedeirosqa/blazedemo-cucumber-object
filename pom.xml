@@ -36,6 +36,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- JUnit 4 -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.20.1</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- WebDriverManager: gerencia automaticamente os drivers dos navegadores como Chrome,
         Firefox, etc. -->
         <dependency>
@@ -50,6 +58,13 @@
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.12.1</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber PicoContainer: fornece injeção de dependência para testes Cucumber -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>7.20.1</version>
         </dependency>
     </dependencies>
 
