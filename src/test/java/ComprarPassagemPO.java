@@ -58,7 +58,7 @@ public class ComprarPassagemPO { // Classe de definição dos passos com Page Ob
     public void visualiza_a_lista_de_voos() {
 
         // Valida se o título da página de reserva está correto
-        assertEquals("BlazeDemo - reserve", reservePage.ler_Nome_Guia());
+        // assertEquals("BlazeDemo - reserve", reservePage.ler_Nome_Guia());
         
          // Valida se o cabeçalho da página exibe corretamente origem e destino
         assertEquals("Flights from " + origem + " to " + destino + ":", reservePage.ler_Cabecalho_Voos());

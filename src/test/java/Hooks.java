@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver; // Importa o ChromeDriver para c
 
 import io.cucumber.java.Before; // Importa a anotação @Before do Cucumber para executar ações antes dos testes
 import io.cucumber.java.After; // Importa a anotação @After do Cucumber para executar ações após os testes
-import io.github.bonigarcia.wdm.WebDriverManager; // Importa o WebDriverManager para gerenciar automaticamente os drivers dos navegadores
+// import io.github.bonigarcia.wdm.WebDriverManager; // Importa o WebDriverManager para gerenciar automaticamente os drivers dos navegadores
 import pages.Base; // Importa a classe Base que contém o WebDriver
 
 public class Hooks { // Classe que contém os métodos de configuração e finalização dos testes
@@ -17,7 +17,7 @@ public class Hooks { // Classe que contém os métodos de configuração e final
 
     @Before // Método executado antes de cada cenário de teste
     public void iniciar() {
-        WebDriverManager.chromedriver().setup(); // Configura automaticamente o ChromeDriver
+        // WebDriverManager.chromedriver().setup(); // Configura automaticamente o ChromeDriver
         base.driver = new ChromeDriver(); // Inicializa o ChromeDriver e atribui ao driver da Base
         // Define o tempo de espera implícito para 60 segundos
         base.driver.manage().timeouts().implicitlyWait(Duration.ofMillis(60000));

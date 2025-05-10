@@ -46,11 +46,11 @@
 
         <!-- WebDriverManager: gerencia automaticamente os drivers dos navegadores como Chrome,
         Firefox, etc. -->
-        <dependency>
+        <!-- <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>6.0.1</version>
-        </dependency>
+        </dependency> -->
 
         <!-- JUnit Jupiter API: permite escrever e executar testes com JUnit 5 -->
         <dependency>
