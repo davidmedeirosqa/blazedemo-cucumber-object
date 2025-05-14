@@ -45,6 +45,14 @@ public class ComprarPassagemPO { // Classe de definição dos passos com Page Ob
         this.destino = destino; // Atribui o valor recebido à variável destino
 
         homePage.selecionar_Origem_Destino(origem, destino); // Seleciona a cidade de origem e destino informadas
+
+        synchronized (driver) {
+            try {
+                driver.wait(1000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @When("clico no botao Find Flights") // Passo para clicar no botão "Find Flights"
@@ -58,10 +66,31 @@ public class ComprarPassagemPO { // Classe de definição dos passos com Page Ob
     public void visualiza_a_lista_de_voos() {
 
         // Valida se o título da página de reserva está correto
-        // assertEquals("BlazeDemo - reserve", reservePage.ler_Nome_Guia());
-        
-         // Valida se o cabeçalho da página exibe corretamente origem e destino
+        assertEquals("BlazeDemo - reserve", reservePage.ler_Nome_Guia());
+
+        // Valida se o cabeçalho da página exibe corretamente origem e destino
         assertEquals("Flights from " + origem + " to " + destino + ":", reservePage.ler_Cabecalho_Voos());
 
+        synchronized (driver) {
+            try {
+                driver.wait(1000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
+
+    @When("clico no {int}") // Passo para clicar no botão "Choose this Flight"
+    public void clico_no(Integer ordem_do_voo) {
+        reservePage.clicar_Voo(ordem_do_voo);
+
+        synchronized (driver) {
+            try {
+                driver.wait(1000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }

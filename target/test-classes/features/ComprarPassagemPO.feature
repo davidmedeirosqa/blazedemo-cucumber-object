@@ -6,8 +6,9 @@ Feature: Comprar passagem
     When seleciono a <origem> e <destino> 
     And clico no botao Find Flights 
     Then visualiza a lista de voos 
+    When clico no <ordem_do_voo>
 
     Examples:
-      | origem     | destino  |
-      | "Portland" | "Dublin" |
-      | "Paris"    | "Berlin" |
+      | origem     | destino  | ordem_do_voo |
+      | "Portland" | "Dublin" | 2            |
+      | "Paris"    | "Berlin" | 5            |
